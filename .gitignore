@@ -1,0 +1,10 @@
+# Default
+/node_modules/
+coverage
+.env
+
+# Temp
+dist
+
+# noise
+# packag-lock.json

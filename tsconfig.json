@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+
+    // # Target JavaScript Version
+    "module": "ESNext",
+    // "target": "ES2015",
+    // "module": "commonjs",
+    "target": "es6",
+
+    // # Development Environment
+    // Whether to support JSX in .tsx files
+    "lib": ["dom", "dom.iterable", "esnext"],
+    // How module dependencies get resolved
+    "moduleResolution": "node",
+    "removeComments": true,
+    "sourceMap": true,
+
+    // * Use with other non-typescript files
+    "declaration": true,
+    // This compiler run should
+    // only output d.ts files
+    "emitDeclarationOnly": true,
+
+    // * Used with JSON files
+    "noUncheckedIndexedAccess": true,
+
+    // # TypeScript Rules
+    // Process & infer types from .js files
+    "allowJs": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    // "jsx": "react",
+    // "jsx": "react-jsx",
+    // "jsx": "react-jsxdev",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    // This allows modules to be in .json files which are useful for configuration files
+    "resolveJsonModule": true,
+
+    // # With Babel
+    // Whether to suppress TypeScript generating code during the compilation process.
+    // Set this to `true`if Babel will be generating the JavaScript code
+    // "noEmit": true,
+    // This enables compatibility with Babel.
+    "esModuleInterop": true,
+
+    // # Misc
+    // Disallow features that require cross-file information for emit
+    // "isolatedModules": true,
+    "isolatedModules": false,
+    // Generate d.ts files
+
+    "plugins": []
+  },
+  "include": ["src", "index.d.ts"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "webpack",
+    "jest",
+    "e2e"
+  ]
+}
